@@ -21,6 +21,11 @@
       <p>{{ message }}</p>
       <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
+    <div id='app-6'>
+      <!-- Power Revealed -->
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
   </div>
 </template>
 
