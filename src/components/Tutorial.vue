@@ -28,9 +28,9 @@
 export default {
   name: 'Tutorial',
   methods: {
-    reverseMessage: function() {
-      this.message = this.message.split('').reverse().join('')
-    }
+    reverseMessage: function reverseMessage() {
+      this.message = this.message.split('').reverse().join('');
+    },
   },
 
   data() {
