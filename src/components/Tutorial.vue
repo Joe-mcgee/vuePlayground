@@ -26,12 +26,22 @@
       <p>{{ message }}</p>
       <input v-model="message">
     </div>
+    <hr>
+    <h2>Components</h2>
+    <TodoItem></TodoItem>
+
   </div>
 </template>
 
 <script>
+// creating a no unussed vars lint error
+import TodoItem from '@/components/TodoItem';
+
 export default {
   name: 'Tutorial',
+  components: {
+    TodoItem,
+  },
   methods: {
     reverseMessage: function reverseMessage() {
       this.message = this.message.split('').reverse().join('');
