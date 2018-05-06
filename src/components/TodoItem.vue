@@ -1,15 +1,20 @@
 <template>
   <div class='TodoItem'>
-      <li>This is a todo</li>
+      <!-- reference a prop's property -->
+      <li>{{ todo.text }}</li>
   </div>
 
 
 </template>
 
 <script>
-  export default {
-    data() {
-      return {}
-    }
-  }
+export default {
+  // define a prop here
+  props: ['todo'],
+  data() {
+    return {
+
+    };
+  },
+};
 </script>

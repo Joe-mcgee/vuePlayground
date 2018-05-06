@@ -11,7 +11,8 @@
     </div>
     <div id="app-4">
       <ol>
-        <li v-for="todo in todos">
+        <li
+         v-for="todo in todos">
           {{ todo.text }}
           }
         </li>
@@ -26,10 +27,16 @@
       <p>{{ message }}</p>
       <input v-model="message">
     </div>
+    <div id="app-7">
+      <ol>
+        <TodoItem
+          v-for="item in groceryList"
+          v-bind:todo="item"
+          v-bind:key="item.id">
+        </TodoItem>
+      </ol>
+    </div>
     <hr>
-    <h2>Components</h2>
-    <TodoItem></TodoItem>
-
   </div>
 </template>
 
@@ -59,6 +66,11 @@ export default {
       todos: [{ text: 'Learn JS' },
         { text: 'Learn Vue' },
         { text: 'build something awesome' },
+      ],
+      groceryList: [
+        { id: 0, text: 'Vegetables' },
+        { id: 1, text: 'Cheese' },
+        { id: 2, text: 'Whatever else humans are supposed to eat' },
       ],
 
     };
