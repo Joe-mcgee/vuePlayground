@@ -85,6 +85,7 @@
     <h2>Dabblings</h2>
       <li>
         <router-link to='/tutorial'>Tutorial</router-link>
+        <router-link to='/lifecycle'>Lifecycle</router-link>
       </li>
     <ul>
 
