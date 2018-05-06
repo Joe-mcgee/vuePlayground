@@ -2,7 +2,8 @@
   <div class='Lifecycle'>
     <p>{{ loading }}</p>
     <p>{{ mounting }}</p>
-    <p>{{ counter  }}</p>
+    <p ref='dom'>{{ counter  }}</p>
+    <p>View the console for more</p>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
       loading: 'loading...',
       mounting: 'mounting...',
       counter: 0,
+      coolMethods: 'Lifecycle methods are awesome!',
     };
   },
 
@@ -47,6 +49,16 @@ export default {
 
   beforeUpdate() {
     console.log(this.counter);
+  },
+
+  updated() {
+    // + before var returns numeric representation of object
+    console.log(+this.$refs.dom.textContent === this.counter);
+  },
+
+  beforeDestroy() {
+    this.coolMethods = null;
+    delete this.coolMethods;
   },
 
   /*
