@@ -5,7 +5,7 @@ import Tutorial from '@/components/Tutorial';
 import TodoItem from '@/components/TodoItem';
 import Lifecycle from '@/components/Lifecycle';
 import HttpClient from '@/components/HttpClient';
-
+import Vuex from '@/components/Vuex';
 
 Vue.use(Router);
 
@@ -30,6 +30,11 @@ export default new Router({
       path: '/httpClient',
       name: 'HttpClient',
       component: HttpClient,
+    },
+    {
+      path: '/vuex',
+      name: 'Vuex',
+      component: Vuex,
     },
 
   ],

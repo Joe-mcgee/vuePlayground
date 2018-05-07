@@ -87,6 +87,7 @@
         <router-link to='/tutorial'>Tutorial</router-link>
         <router-link to='/lifecycle'>Lifecycle</router-link>
         <router-link to='/httpClient'>httpClient</router-link>
+        <router-link to='/vuex'>Vuex</router-link>
       </li>
     <ul>
 
