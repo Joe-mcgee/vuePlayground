@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld';
 import Tutorial from '@/components/Tutorial';
 import TodoItem from '@/components/TodoItem';
 import Lifecycle from '@/components/Lifecycle';
+import HttpClient from '@/components/HttpClient';
 
 
 Vue.use(Router);
@@ -25,6 +26,11 @@ export default new Router({
       name: 'Lifecycle',
       component: Lifecycle,
     },
+    {
+      path: '/httpClient',
+      name: 'HttpClient',
+      component: HttpClient,
+    }
 
   ],
 });
