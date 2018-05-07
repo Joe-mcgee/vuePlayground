@@ -1,11 +1,13 @@
 <template>
   <div class='Vuex'>
-    <p>The Safely stored number: {{ doneTodosCount }} </p>
+    <p>Todo Items that are complete: {{ doneTodosCount }} </p>
+    <p>Safely Stored number: {{safelyStoredNumber }}</p>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import { mapMutations } from 'vuex';
 // https://vuex.vuejs.org/en/intro.html
 // https://alligator.io/vuejs/intro-to-vuex/
 export default {
@@ -18,13 +20,16 @@ export default {
   computed: {
     ...mapGetters([
       'doneTodosCount',
+      'safelyStoredNumber',
     ]),
   },
 
   methods: {
-    increment() {
-      this.count++;
-    },
+    ...mapMutations([
+      'addTodo',
+      'incrementStoredNumber',
+      'setStoredNumber',
+    ]),
   },
 };
 </script>
