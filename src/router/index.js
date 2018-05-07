@@ -30,7 +30,7 @@ export default new Router({
       path: '/httpClient',
       name: 'HttpClient',
       component: HttpClient,
-    }
+    },
 
   ],
 });

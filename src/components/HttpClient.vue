@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       posts: [],
-      errors: []
+      errors: [],
     };
   },
 
@@ -23,13 +23,11 @@ export default {
   async created() {
     const number = Math.floor(Math.random() * (9)) + 1;
     try {
-      const res = await axios.get(`http://numbersapi.com/${number}/math`)
+      const res = await axios.get(`http://numbersapi.com/${number}/math`);
       this.posts = res.data;
-
     } catch (err) {
       this.errors.push(err);
     }
-
   },
-}
+};
 </script>
