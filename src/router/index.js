@@ -6,6 +6,7 @@ import TodoItem from '@/components/TodoItem';
 import Lifecycle from '@/components/Lifecycle';
 import HttpClient from '@/components/HttpClient';
 import Vuex from '@/components/Vuex';
+import Ethereum from '@/components/Ethereum';
 
 Vue.use(Router);
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/vuex',
       name: 'Vuex',
       component: Vuex,
+    },
+    {
+      path: '/ethereum',
+      name: 'Ethereum',
+      component: Ethereum,
     },
 
   ],

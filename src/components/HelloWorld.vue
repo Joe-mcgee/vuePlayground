@@ -88,6 +88,7 @@
         <router-link to='/lifecycle'>Lifecycle</router-link>
         <router-link to='/httpClient'>httpClient</router-link>
         <router-link to='/vuex'>Vuex</router-link>
+        <router-link to='/ethereum'>Ethereum</router-link>
       </li>
     <ul>
 
