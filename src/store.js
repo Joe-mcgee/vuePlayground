@@ -22,9 +22,7 @@ export const store = new Vuex.Store({
       return state.safelyStoredNumber;
     },
     storedNumberMatches(state) {
-      return (matchNumber) => {
-        return state.safelyStoredNumber === matchNumber;
-      };
+      return matchNumber => state.safelyStoredNumber === matchNumber;
     },
   },
   mutations: {

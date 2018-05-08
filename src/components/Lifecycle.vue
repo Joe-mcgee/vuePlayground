@@ -29,7 +29,7 @@ export default {
 
   // created is best suited for fetching data
   created() {
-    console.log('on created i can access a loading string ' + this.loading);
+    console.log(`on created i can access a loading string ${this.loading}`);
     this.loading = 'loaded!';
 
     setInterval(() => {
@@ -39,12 +39,12 @@ export default {
 
   // all client from here
   beforeMount() {
-    console.log('i am ' + this.mounting);
+    console.log(`i am ${this.mounting}`);
   },
 
   mounted() {
     this.mounting = 'mounted';
-    console.log('i am ' + this.mounting);
+    console.log(`i am ${this.mounting}`);
   },
 
   beforeUpdate() {
