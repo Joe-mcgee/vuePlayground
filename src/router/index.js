@@ -6,6 +6,7 @@ import TodoItem from '@/components/TodoItem';
 import Lifecycle from '@/components/Lifecycle';
 import HttpClient from '@/components/HttpClient';
 import Vuex from '@/components/Vuex';
+import Hyperledger from '@/components/Hyperledger';
 
 Vue.use(Router);
 
@@ -36,6 +37,10 @@ export default new Router({
       name: 'Vuex',
       component: Vuex,
     },
-
+    {
+      path: '/hyperledger',
+      name: 'Hyperledger',
+      component: Hyperledger,
+    },
   ],
 });
